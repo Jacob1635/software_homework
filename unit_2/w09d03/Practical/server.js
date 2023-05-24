@@ -3,8 +3,21 @@ const app = express();
 
 app.get('/greeting/:name', (req, res) => {
         const name = req.params.name;
-        const greeting = `Hello, ${name}!`;
+        let = greeting = '';
+
+        if (name === 'Jimmy-boy'){
+            greeting = `Wow! Hello There, ${name}! `;
+        } else if (name){
+            greeting = `What's up, ${name}?`;
+        } else {
+            greeting = 'Hello, Stranger!';
+        }
         res.send(greeting);
+    });
+
+    app.get('/greeting', (req, res) => {
+        const greeting = "Hello, Stranger!"
+        res.send(greeting)
     });
 
 
