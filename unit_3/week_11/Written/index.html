@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 11 Written Homework</title>
+  </head>
+
+      <li>
+        Express is a lightweight and easily creating servers that handle http
+        requests.
+      </li>
+      <li>
+        Mongoose the the module that helps us access and use our MongoDB using
+        nodejs.
+      </li>
+      <li>Mongoose offers two ways in managing relationships between data.</li>
+
+        <li>
+          Population - inserting another document inside document's field in order 
+          access them with simple line
+        </li>
+        <li>
+          it does not 'insert' the document itself but rather a 'reference' 
+          to the related documents
+        </li>
+     
+      <li>
+        basically time-tested solution for common problems that arise when creating software. 
+        Following these patterns make your application easier to maintain and scale.
+      </li>
+      <li>
+        Models shows database how it is structured and inputing.
+        Views which is what the client sees and able to interact with.
+        Controller is what links the views and the models together. 
+        Is is responsible for updating the models depending on what
+        the client does in the views.
+      </li>
+  
+      <li>
+        Latency refers to the amount of time it takes to 'move' data, starting
+        from making a request from the client to the server giving back a
+        response so In the context of APIs
+        we want a lower latency and a larger throughput 
+      </li>
+      <li>
+        Minimizing latency is essential because you want to be able to update or
+        access whatever it is you are trying to do as fast as possible because
+        someone else in the web might be doing the same thing and we want to be
+        able to have the most up-to-date data as possible when making decisions
+        to interact with the app. We always want our data to be in sync with
+        whatever everyone is seeing in their own screens. our app should be able to
+        handle loads of requests at the same time without our server crashing.
+    
+      </li>
+      <li>
+        verifying the identity of the user.
+      </li>
+      <li>
+        Authentication database would send out to database to server to match it 
+        thus granted it 
+      </li>
+      <li>
+        express.static built-in middleware you serve static files from your server.
+      </li>
+      <li>
+        We can use express.static to render an image from our blog post on it's
+        own separate page, by providing the path to the image and passing in the
+        directory name to express ie. express.static('photos')
+      </li>
+      <li>
+        Jest is testing framework for javascript. It is fast and easy to use out
+        of the box which made it very popular.
+      </li>
+      <li>
+        Supertest lets you create http. with jest, we can ping our API
+        endpoints and check wether we get the expected responses back from each
+        one. With jest and supertest, we can make requests, validate the
+        response, and perform testing.
+      </li>
+      <li>
+        We can manually test Postman. set the url. and edit request header/body accordingly. 
+        manually change the endpoint we want to test, and can be very
+        time consuming. <br />
+        With supertest, write out all test logic, and keep
+        testing them all at once with jest.
+      </li>
+      <li>
+      
+          <li>
+            Unit Testing - refers to testing the smallest components of our app.
+           
+          </li>
+          <li>
+            Integration Testing - refers to testing how smaller components
+            interact when put all together. 
+          </li>
+          <li>
+            End-to-End Testing - this testing refers to simulating the entirety
+            of an app. From initialization to when a user stops using it.
+          </li>
+        </ul>
+      </li>
+      <li>
+      
+          <li>
+            Functional Testing - to verifies the functions
+            correctly and it does what it is supposed to to. 
+          </li>
+          <li>
+            Regression Testing - whether code changes have not
+            impacted a perfectly running application before the code
+            changes or bug fixes where pushed. 
+          </li>
+          <li>
+            Smoke Testing - quick and checking the certain core
+            features, inputting function further more if needed. 
+          </li>
+          <li>
+            Performance Testing - this test is ran so we can get see how our app
+            performs under certain conditions. 
+            <ul>
+              <li>
+                Load testing - where we test how our app responds to high number
+                of concurrent users
+              </li>
+              <li>
+                Network latency testing - where we measure our app's response
+                time when accessed from different locations in the world
+            
+    
+          <li>
+            Positive Testing - this test ensures that we get the expected
+            responses back when the app is provided valid data
+          
+            Negative Testing - this test ensures the app handles invalid input,
+            edge cases the way it is supposed to
+          </li>
+      <li>
+        Load testing puts a lot of stress on the software to see how it will
+        respond, so that we can measure how well it does under heavy traffic.
+  
+      </li>
+      <li>
+        Usability testing is done to see how the application is.
+        Are they able to follow the flow of the app? Is the design
+        consistent? Is it easy to navigate?
+       
+       
+        </ul>
+      </li>
+      <li>
+        Security testing makes sure our app is able to protect sensitive data
+        the it contains, prevent them from being 'leaked'.
+      </li>
+      <li>
+        Compatibility testing refers to tests that ensures our app is able to
+        run on different platforms.
+      <li>
+        Recovery testing verifies how well our app can go back to functioning
+        level after different types of failures and/ or disruptions. This ensure that
+        our software is able to bounce back and resume to normal.
+      </li>
+      <li>
+        User Acceptance Testing is the final phase of testing before the
+        software is released to production. 
+      </li>
+      <li>
+      
+          <li>
+            Positive Testing - we create nput data and get back the expected
+            results.
+          </li>
+          <li>
+            Negative Testing w/ Valid Input - This would be the opposite of the
+            first test described above. but return some kind of 'user not found' error
+          </li>
+          <li>
+            Negative Testing w/ Invalid input - The
+            test should then return an error letting the client know their
+            request is invalid.
+          </li>
+          <li>
+            Destructive Testing - Doing a load test using artillery would
+            probably resemble destructive testing the best.
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
